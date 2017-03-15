@@ -7,7 +7,7 @@ using System.Collections;
 public class GalagaBulletEmitter : BulletEmitter
 {
 
-    public new bool CanFire()
+    public new bool BanderaDeDisparo()
     {
         //Validaciòn de, cuando se tenga la señal del fuego y se emite una colisiòn 
         return Input.GetKeyDown("space") && !cooling;
@@ -17,7 +17,8 @@ public class GalagaBulletEmitter : BulletEmitter
         if (NeedReload()){
             Reload();}
 
-        if (CanFire()){
+        if (BanderaDeDisparo())
+        {
             StartCoroutine(Fire());
         }
     }

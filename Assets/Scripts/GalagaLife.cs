@@ -13,13 +13,13 @@ public class GalagaLife : MonoBehaviour
     {
         if (collider.tag == "EnemyBullet" || collider.tag == "Enemy")
         {
-            PlayExplosion();
+            PlayAnimation();
             Destroy(gameObject);
         }
     }
     //Animacion de la explision 
     //La explosion se encontro en una pagina de google, https://www.softonic.com/windows/animacion 
-    void PlayExplosion()
+    void PlayAnimation()
     {
         var explosion = (GameObject)Instantiate(explosionPref);
         explosion.transform.position = gameObject.transform.position;

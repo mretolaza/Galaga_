@@ -5,7 +5,7 @@ public class Score : MonoBehaviour {
 
 	public int score;
 
-	public void OnHitEnemy() {
+	public void PegarAEnemigo() {
 		score += 15;
 	}
 

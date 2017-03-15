@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
 
             GameObject scoreobj = GameObject.FindGameObjectWithTag("Score");
             Score score = (Score)scoreobj.GetComponent(typeof(Score));
-            score.OnHitEnemy();
+            score.PegarAEnemigo();
 
             Destroy(gameObject);
         }
